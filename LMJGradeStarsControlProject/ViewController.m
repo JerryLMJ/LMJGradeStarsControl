@@ -30,6 +30,12 @@
     control.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:control];
     
+    
+    LMJGradeStarsControl * control2 = [[LMJGradeStarsControl alloc] initWithFrame:CGRectMake(20, 100, 200, 30) defaultSelectedStatIndex:2 totalStars:5 starSize:20];
+    control2.delegate = self;
+    control2.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:control2];
+    
 }
 
 - (void)gradeStarsControl:(LMJGradeStarsControl *)gradeStarsControl selectedStars:(NSInteger)stars{
